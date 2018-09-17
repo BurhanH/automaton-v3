@@ -6,4 +6,5 @@ def inc(x):
 
 
 def test():
-    assert inc(4) == 5
+    if not inc(4) == 5:
+        raise AssertionError()
