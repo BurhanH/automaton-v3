@@ -7,4 +7,4 @@ install:
    - pip install -r requirements.txt
 
 script:
-    - pytest -v tests\initial.py
+    - pytest -v tests/initial.py
