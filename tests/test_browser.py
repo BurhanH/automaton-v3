@@ -1,36 +1,50 @@
+from contextlib import contextmanager
 from selenium import webdriver
 
+WAIT_IMPL = 10
+WINDOW_SIZE = 1280, 1024
 
-class TestBrowserResolution:
+
+class TestBrowser:
     """
-    This test suite for browser resolution testing.
+    This test suite for browser testing.
     """
-    @staticmethod
-    def _set_and_verify(set_width, set_height):
+    @contextmanager
+    def make_driver(self):
+        """
+        Method to initiate driver.
+        """
+        self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(WAIT_IMPL)
+        self.driver.set_window_size(WINDOW_SIZE[0], WINDOW_SIZE[1])
+        try:
+            yield
+        finally:
+            self.driver.close()
+
+    def _set_and_verify(self, set_width, set_height):
             """
-            Common static method to initiate browser, set browser resolution, and verify it.
+            Common method to set browser resolution, and verify it.
             :param set_width:
             :param set_height:
             """
-            driver = webdriver.Firefox()
-            driver.set_window_size(set_width, set_height)
-            resolution = driver.get_window_size()
-            width = resolution.get('width')
-            height = resolution.get('height')
+            with self.make_driver():
+                self.driver.set_window_size(set_width, set_height)
+                resolution = self.driver.get_window_size()
+                width = resolution.get('width')
+                height = resolution.get('height')
 
-            errors = []
+                errors = []
 
-            if width != set_width:
-                errors.append(u'Width is {} expecting {}'.format(width, set_width))
-            if height != set_height:
-                errors.append(u'Height is {} expecting {}'.format(height, set_height))
+                if width != set_width:
+                    errors.append(u'Width is {} expecting {}'.format(width, set_width))
+                if height != set_height:
+                    errors.append(u'Height is {} expecting {}'.format(height, set_height))
 
-            error_msgs = '\n'.join(errors)
+                error_msgs = '\n'.join(errors)
 
-            driver.close()
-
-            if errors:
-                raise AssertionError(error_msgs)
+                if errors:
+                    raise AssertionError(error_msgs)
 
     def test_resolution_1(self):
         """
@@ -61,3 +75,20 @@ class TestBrowserResolution:
         Testing resolution 1900, 1200
         """
         self._set_and_verify(1900, 1200)
+
+    def test_search_in_google(self):
+        """
+        Testing search in Google
+        """
+        with self.make_driver():
+            # Going to google.com
+            self.driver.get('https://www.google.com')
+            # Searching for the input field by name and entering data
+            self.driver.find_element_by_name('q').send_keys('python')
+            # Searching and waiting the search drop-down menu
+            self.driver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
+            # Clicking Google Search button
+            self.driver.find_element_by_css_selector("input[name='btnK']").click()
+            # Verifying search results
+            if not self.driver.find_element_by_class_name('bNg8Rb').is_displayed():
+                raise AssertionError("Unable to find results on a page!")
