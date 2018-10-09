@@ -85,8 +85,9 @@ class TestBrowser:
             self.driver.get('https://www.google.com')
             # Searching for the input field by name and entering data
             self.driver.find_element_by_name('q').send_keys('python')
-            # Searching and waiting the search drop-down menu
-            self.driver.find_element_by_css_selector('.FPdoLc.VlcLAe').is_displayed()
+            # FIXME workaround, probably the reason is search drop-down menu
+            import time
+            time.sleep(2)
             # Clicking Google Search button
             self.driver.find_element_by_css_selector("input[name='btnK']").click()
             # Verifying search results
