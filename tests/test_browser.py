@@ -3,6 +3,7 @@ from selenium import webdriver
 
 WAIT_IMPL = 10
 WINDOW_SIZE = 1280, 1024
+BROWSER = 'firefox'
 
 
 class TestBrowser:
@@ -14,7 +15,10 @@ class TestBrowser:
         """
         Method to initiate driver.
         """
-        self.driver = webdriver.Firefox()
+        if BROWSER == 'chrome':
+            self.driver = webdriver.Chrome()
+        if BROWSER == 'firefox':
+            self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(WAIT_IMPL)
         self.driver.set_window_size(WINDOW_SIZE[0], WINDOW_SIZE[1])
         try:
