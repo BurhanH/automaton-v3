@@ -7,8 +7,25 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Pytest
 # Quick start!
 
 #### Requirements
-Python 3.6.\*, Selenium 3.14.0, Pytest 3.8.1, virtualenv (virtual environment manager), 
-Firefox 62.\*, geckodriver 0.22, Chrome 69.*, chromedriver 2.42 
+Python 3.6.\*, Selenium 3.14.0, Pytest 3.8.1, <br> 
+virtualenv (virtual environment manager), <br>
+Firefox 62.\*, geckodriver 0.22, <br> 
+Chrome 69.*, chromedriver 2.42 <br>
+
+#### Project structure
+```
+-- automaton-v3
+   |-- .gitattributes
+   |-- .gitignore
+   |-- .travis.yml
+   |-- LICENSE
+   |-- README.md
+   |-- requirements.txt
+   `-- tests
+       |-- __init__.py
+       |-- test_browser.py
+       |-- test_initial.py
+```
 
 #### How to prepare environment
 1) Install Python - https://www.python.org/downloads/
