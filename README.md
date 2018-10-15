@@ -42,4 +42,5 @@ Chrome 69.*, chromedriver 2.42 <br>
 
 ## How to run test/s in Chrome browser
 1) Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v3#how-to-prepare-environment) section
+
 To be continue ...
