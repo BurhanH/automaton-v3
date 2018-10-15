@@ -30,8 +30,8 @@ Chrome 69.*, chromedriver 2.42 <br>
 2) Install and configure [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
 3) Clone or copy (download) the repository into your virtual environment
 4) Activate virtual environment, move to `automaton-v3` folder, and execute command `pip install -r requirements.txt`
-5) Install Firefox web browser
-6) Download, extract and move geckodriver into `bin` folder for Mac/Linux, `Scripts` folder for Windows on virtual environment
+5) Install Firefox / Chrome web browser
+6) Download, extract and move geckodriver / chromedriver into `bin` folder for Mac/Linux, `Scripts` folder for Windows on virtual environment
 
 ## How to run tests
 1) Open terminal window
@@ -39,5 +39,8 @@ Chrome 69.*, chromedriver 2.42 <br>
 3) Activate virtual environment 
 4) Move to `automaton-v3` folder
 5) Execute `pytest`
+
+## How to run test/s in Chrome browser
+1) Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. Note! Before execution read step 6 from 'How to prepare environment' section
 
 To be continue ...
