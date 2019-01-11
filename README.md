@@ -6,7 +6,7 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Pytest
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83a77e1b4a8242e6a4006e0f4ef0d928)](https://app.codacy.com/app/BurhanH/automaton-v3?utm_source=github.com&utm_medium=referral&utm_content=BurhanH/automaton-v3&utm_campaign=Badge_Grade_Dashboard)
 
 ## Requirements
-Python 3.6.\*, Selenium 3.141.0, Pytest 4.1.0, <br> 
+Python 3.7.\*, Selenium 3.141.0, Pytest 4.1.0, <br> 
 virtualenv (virtual environment manager), <br>
 Firefox 64.\*, geckodriver 0.23, <br> 
 Chrome 71.*, chromedriver 2.45 <br>
