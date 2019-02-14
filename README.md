@@ -8,8 +8,8 @@ Automation framework (UI) - an example. Based on Python, Selenium, and Pytest
 ## Requirements
 Python 3.7.\*, Selenium 3.141.0, Pytest 4.1.0, <br> 
 virtualenv (virtual environment manager), <br>
-Firefox 64.\*, geckodriver 0.23, <br> 
-Chrome 71.*, chromedriver 2.45 <br>
+Firefox 65.\*, geckodriver 0.24, <br> 
+Chrome 72.\*, chromedriver 73.0.3683.20 <br>
 
 ## Project structure
 ```text
