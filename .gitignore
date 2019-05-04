@@ -2,6 +2,5 @@
 *.pyc
 *.iml
 geckodriver.log
-.pytest_cache/v/cache/nodeids
-.pytest_cache/README.md
-.pytest_cache/v/cache/lastfailed
+.pytest_cache
+.cache
