@@ -2,6 +2,7 @@ import time
 
 from contextlib import contextmanager
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 WAIT_IMPL = 10
 WINDOW_SIZE = 1280, 1024
@@ -97,11 +98,7 @@ class TestBrowser:
             # Going to google.com
             self.driver.get('https://www.google.com')
             # Searching for the input field by name and entering data
-            self.driver.find_element_by_name('q').send_keys('python')
-            # FIXME workaround, probably the reason is search drop-down menu
-            time.sleep(2)
-            # Clicking Google Search button
-            self.driver.find_element_by_css_selector("input[name='btnK']").click()
+            self.driver.find_element_by_name('q').send_keys('python' + Keys.ENTER)
             # Verifying search results
             if not self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed():
                 raise AssertionError("Unable to find results on a page!")
