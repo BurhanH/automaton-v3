@@ -1,5 +1,5 @@
-# automaton-v3
-Automation framework (UI) - an example. Based on Python, Selenium, and Pytest
+# Automaton-v3
+Automation testing framework (UI) - an example. Based on Python, Selenium, and Pytest
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v3/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v3.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v3)
