@@ -8,8 +8,8 @@ Automation testing framework (UI) - an example. Based on Python, Selenium, and P
 ## Requirements
 Python 3.6.\*/3.7.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
 virtualenv (virtual environment manager), <br>
-Firefox 71.*, geckodriver 0.26.0, <br>
-Chrome 79.0.3945.88, chromedriver 79.0.3945.88 <br>
+Firefox 75.0, geckodriver 0.26.0,
+Chrome 81.0.4044.122, chromedriver 81.0.4044.69
 
 ## Project structure
 ```text
@@ -42,4 +42,15 @@ Chrome 79.0.3945.88, chromedriver 79.0.3945.88 <br>
 5) Execute `pytest`
 
 ## How to run test/s in Chrome browser
-1) Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v3#how-to-prepare-environment) section
+Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. </br> Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v3#how-to-prepare-environment) section
+
+## Techology stack and helpful info
+[Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/)</br>
+[virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) </br>
+[GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) </br>
+[Pytest](https://docs.pytest.org/en/latest/contents.html#toc) </br>
+[Selenium](https://www.selenium.dev/documentation/en/) </br>
+[Firefox](https://www.mozilla.org/en-US/firefox/) </br>
+[geckodriver](https://github.com/mozilla/geckodriver/releases) </br>
+[Chrome](https://www.google.com/chrome/) </br>
+[ChromeDriver](https://chromedriver.chromium.org/downloads) </br>
