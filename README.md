@@ -4,6 +4,7 @@ Automation testing framework (UI) - an example. Based on Python, Selenium, and P
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v3/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v3.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v3)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83a77e1b4a8242e6a4006e0f4ef0d928)](https://app.codacy.com/app/BurhanH/automaton-v3?utm_source=github.com&utm_medium=referral&utm_content=BurhanH/automaton-v3&utm_campaign=Badge_Grade_Dashboard)
+[![HitCount](http://hits.dwyl.com/BurhanH/automaton-v3.svg)](http://hits.dwyl.com/BurhanH/automaton-v3)
 
 ## Requirements
 Python 3.6.\*/3.7.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
