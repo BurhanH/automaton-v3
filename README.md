@@ -45,7 +45,7 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69
 ## How to run test/s in Chrome browser
 Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. <br> Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v3#how-to-prepare-environment) section
 
-## Techology stack and helpful info
+## Technology stack and helpful info
 [Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/) <br>
 [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) <br>
 [GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) <br>
