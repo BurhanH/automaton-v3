@@ -98,5 +98,5 @@ class TestBrowser:
             # Searching for the input field by name and entering data
             self.driver.find_element_by_name('q').send_keys('python' + Keys.ENTER)
             # Verifying search results
-            if not self.driver.find_element_by_css_selector('.bNg8Rb').is_displayed():
+            if not self.driver.find_element_by_id('search').is_displayed():
                 raise AssertionError("Unable to find results on a page!")
