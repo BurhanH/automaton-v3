@@ -6,7 +6,7 @@ Automation testing framework (UI) - an example. Based on Python, Selenium, and P
 [![Python Selenium pytest testing](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml/badge.svg)](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml)
 
 ## Requirements
-Python 3.6.\*/3.7.\*3.8.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
+Python 3.6.\*/3.7.\*/3.8.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
 virtualenv (virtual environment manager), <br>
 Firefox 90.0, geckodriver 0.29.1, </br>
 Chrome 81.0.4044.122, chromedriver 81.0.4044.69
