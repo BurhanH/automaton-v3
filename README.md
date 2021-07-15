@@ -2,13 +2,13 @@
 Automation testing framework (UI) - an example. Based on Python, Selenium, and Pytest
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v3/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/BurhanH/automaton-v3.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v3)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/83a77e1b4a8242e6a4006e0f4ef0d928)](https://app.codacy.com/app/BurhanH/automaton-v3?utm_source=github.com&utm_medium=referral&utm_content=BurhanH/automaton-v3&utm_campaign=Badge_Grade_Dashboard)
+[![Python Selenium pytest testing](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml/badge.svg)](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml)
 
 ## Requirements
 Python 3.6.\*/3.7.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
 virtualenv (virtual environment manager), <br>
-Firefox 75.0, geckodriver 0.26.0, </br>
+Firefox 90.0, geckodriver 0.29.1, </br>
 Chrome 81.0.4044.122, chromedriver 81.0.4044.69
 
 ## Project structure
@@ -16,7 +16,6 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69
 -- automaton-v3
    |-- .gitattributes
    |-- .gitignore
-   |-- .travis.yml
    |-- LICENSE
    |-- README.md
    |-- requirements.txt
