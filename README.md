@@ -6,7 +6,7 @@ Automation testing framework (UI) - an example. Based on Python, Selenium, and P
 [![Python Selenium pytest testing](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml/badge.svg)](https://github.com/BurhanH/automaton-v3/actions/workflows/python-app.yml)
 
 ## Requirements
-Python 3.6.\*/3.7.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
+Python 3.6.\*/3.7.\*3.8.\*, Selenium 3.141.0, Pytest 4.4.1, <br> 
 virtualenv (virtual environment manager), <br>
 Firefox 90.0, geckodriver 0.29.1, </br>
 Chrome 81.0.4044.122, chromedriver 81.0.4044.69
@@ -44,7 +44,7 @@ Chrome 81.0.4044.122, chromedriver 81.0.4044.69
 Go to any UI scenario and change the value of the `BROWSER` variable from `firefox` to `chrome`. <br> Note! Before execution read steps 5-6 from [How to prepare environment](https://github.com/BurhanH/automaton-v3#how-to-prepare-environment) section
 
 ## Technology stack and helpful info
-[Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/) <br>
+[Python 3.6](https://docs.python.org/3.6/) / [Python 3.7](https://docs.python.org/3.7/) / [Python 3.8](https://docs.python.org/3.8/) <br>
 [virtualenv](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) <br>
 [GitHub, cloning repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) <br>
 [Pytest](https://docs.pytest.org/en/latest/contents.html#toc) <br>
