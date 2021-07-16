@@ -23,7 +23,7 @@ jobs:
     - run: firefox --version
     - uses: browser-actions/setup-geckodriver@latest
     - run: geckodriver --version
-    - name: Set up Python
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
